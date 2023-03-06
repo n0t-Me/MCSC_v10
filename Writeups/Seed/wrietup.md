@@ -63,7 +63,7 @@ random.seed(seed)
 original_key = random.choices(string.printable[:-5].encode(), k=16)
 
 encText = bytes.fromhex(open('flag.enc', 'rt').read())
-print(decrypt(encText, original_key).decode())```
-
+print(decrypt(encText, original_key).decode())
+```
 
 Let's try it:

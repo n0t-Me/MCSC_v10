@@ -32,11 +32,11 @@ Does it seems familiar? That's because this is `morse code` And after decoding i
 
 Now let's put everything together. We can follow this simple algorithm:
 
-1-Get the data from the pickle file 
-2-See if it's morse or QR 
-3-Decode it 
-4-Unzip the archive
-5-Repeat
+1- Get the data from the pickle file 
+2- See if it's morse or QR 
+3- Decode it 
+4- Unzip the archive
+5- Repeat
 
 And here is my proposed solution:
 
