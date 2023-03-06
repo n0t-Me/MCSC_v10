@@ -21,3 +21,7 @@ You'll need a system/resources monitor that provide a CPU graph (it's better if 
 We can see a text repeating: `__/ I AM A LAMA \__`
 
 FLAG: `insec{__/ I AM A LAMA \__}`
+
+# Credits
+
+_I got the idea from:_ ![][https://codegolf.stackexchange.com/questions/33059/draw-with-your-cpu]
