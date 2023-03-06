@@ -75,3 +75,8 @@ We convert it to unix timestamp, and beware it's GMT+1 so in GMT : `2023-02-15 1
 Execution:
 
 ![](solution.png)
+
+FLAG: insec{I_l0ve_r4nd0m}
+
+
+_Note: I used older files for this writeup, so the seed may change_
