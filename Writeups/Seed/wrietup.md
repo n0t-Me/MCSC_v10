@@ -5,9 +5,9 @@ Seed is a crypto challenge, you're provided a zip file containing the encrypted 
 ## Creating the decrypt function
 
 First let's create a decrypt function from the encryption script. We have the following relation:
-  (215 * msg) + (151 * key) = secret `mod` 256
-  215 * msg = secret - (151 * key) `mod` 256
-  msg = inv_215 * (secret - (151 * key)) `mod` 256
+- (215 * msg) + (151 * key) = secret `mod` 256
+- 215 * msg = secret - (151 * key) `mod` 256
+- msg = inv_215 * (secret - (151 * key)) `mod` 256
 with `inv_215 = 231` the inverse of 215 in Z/256Z 
 
 We obtain the following decryption function:
