@@ -1,6 +1,6 @@
 # Cucumber Writeup
 
-Cucumber is a misc challenge, you're provided a zip file, it's a classical challenge matrioshka style zip, each zip contain another zip and the final zip contain the flag.
+Cucumber is a misc challenge, you're provided a zip file, it's a classical challenge matryoshka style zip, each zip contain another zip and the final zip contain the flag.
 
 The first zip is encrypted, the password is `insec` I don't know if that was clear, I mean players are here in MCSC organized by insec, however I thought no one found it so I added it as a hint xD.
 
