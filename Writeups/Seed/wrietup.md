@@ -66,4 +66,12 @@ encText = bytes.fromhex(open('flag.enc', 'rt').read())
 print(decrypt(encText, original_key).decode())
 ```
 
-Let's try it:
+Let's try it, first the seed:
+
+![](seed.png)
+
+We convert it to unix timestamp, and beware it's GMT+1 so in GMT : `2023-02-15 15:35:50` (Some converters will take care of the timezone) thus the seed: `1676475350`
+
+Execution:
+
+![](solution.png)
