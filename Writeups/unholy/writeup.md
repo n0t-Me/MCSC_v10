@@ -6,11 +6,11 @@ unholy is a web challenge, where you are provided a site that check if your flag
 
 Open debugger and locate the wasm file:
 
-![]('debugger.png')
+![](debugger.png)
 
 Notice some very big numbers starting from `0000161A`:
 
-![]('wasm.png')
+![](wasm.png)
 
 Copy and paste all the numbers (and yes I did it by hand):
 
@@ -51,37 +51,37 @@ _Don't forget the `}` at the end_
 
 Well since your input is being compared to the flag, you can try your luck and see what's in the memory. I'll be using chrome since it comes with a nice memory inspector, put a breakpoint in `is_valid`:
 
-![]('m2_1.png')
+![](m2_1.png)
 
 After some steps we find the `is_valid` function in the wasm file it seems to compare our flag length to `59` if it's not equal it exits.
 
-![]('m2_2.png')
+![](m2_2.png)
 
 Let's try again with a 59 len text:
 
-![]('m2_3.png')
+![](m2_3.png)
 
 Nice now let's put a breakpoint before the end of the function, and try to see what's in the memory:
 
-![]('m2_4.png')
+![](m2_4.png)
 
 Let's visit the address of ` $var0` which is `1114120` in hex `0x110008`
 
-![]('m2_5.png')
+![](m2_5.png)
 
 Nice it's my input! And now if you did the same with ` $var8` you will find the flag !
 
-![]('m2_6.png')
+![](m2_6.png)
 
 Here is the full output:
 
-![]('f1.png')
-![]('f2.png')
-![]('f3.png')
-![]('f4.png')
-![]('f5.png')
-![]('f6.png')
-![]('f7.png')
+![](f1.png)
+![](f2.png)
+![](f3.png)
+![](f4.png)
+![](f5.png)
+![](f6.png)
+![](f7.png)
 
 
 And that's it, ez challenge, FLAG: `insec{Unh0ly_w4sm_d406a9fd8940d0dbc64c209f25c0f16573cdb1e6}`
