@@ -42,7 +42,7 @@ print(unpack('>Q', nums)[::-1])
 ```
 
 RESULT:
-![]('flag_1.png')
+![](flag_1.png)
 
 _Don't forget the `}` at the end_
 
