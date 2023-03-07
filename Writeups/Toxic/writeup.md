@@ -10,8 +10,8 @@ Congratz you can now exploit a prototype pollution, I don't know what was hard i
 
 Here is the exploit script:
 
-```
-Python
+```Python
+
 # There is a prototype pollution in decObjIn
 # Plus `exec` will get us a RCE
 
